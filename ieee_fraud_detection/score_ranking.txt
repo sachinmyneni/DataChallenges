@@ -1,0 +1,33 @@
+downsample1
+AUC: 0.7805994682951539
+AUC scores computed using 5-fold cross-validation: [0.6663626  0.69456346 0.68189547 0.70411623 0.69020105]
+#2033: 0.8331
+
+downsample1 + weekday#
+AUC: 0.7896078351459321
+AUC scores computed using 5-fold cross-validation: [0.66721492 0.69485553 0.68562969 0.70357583 0.69018952]
+#2033: 0.8319
+
+-np16(TransactionAmt)
+AUC: 0.7894379908781648
+AUC scores computed using 5-fold cross-validation: [0.66772456 0.69440896 0.68726532 0.70510022 0.68887548]
+#2024: 0.8411
+
+-logreg + MLCP (alpha=1,max_iter=1000)
+AUC: 0.7395916216963412
+AUC scores computed using 5-fold cross-validation: [0.68562389 0.78870157 0.7957953  0.81068938 0.79525963]
+#2069 :0.7784
+
+MLCP (hidden_layer_sizes=(300,),activation='logistic',alpha=0.01,max_iter=1000)
+AUC: 0.79777973474143
+AUC scores computed using 5-fold cross-validation: [0.69713006 0.77933328 0.75795816 0.80357934 0.78043704]
+#2059 : 0.8490
+
+MLCP (hidden_layer_sizes=(300,),activation='tanh',alpha=0.01,max_iter=1000)
+AUC: 0.7905777187134735
+AUC scores computed using 5-fold cross-validation: [0.68760272 0.77994673 0.76763299 0.78537751 0.77148591]
+did not submit
+
+AdaBoost (Basic scikit)
+AUC: 0.8642266184545112
+#2037: 0.8851
