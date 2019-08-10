@@ -31,3 +31,8 @@ did not submit
 AdaBoost (Basic scikit)
 AUC: 0.8642266184545112
 #2037: 0.8851
+
+XGBoost (n_estimators=500,n_jobs=4,max_depth=9,learning_rate=0.05,subsample=0.9,colsample_bytree=0.9,missing=-999)
+From kaggle kernel
+AUC: 0.9480743426072431
+#1767 : 0.9246
